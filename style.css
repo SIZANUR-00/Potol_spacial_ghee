@@ -1,0 +1,441 @@
+/* ===== Global Styles (Unchanged) ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: image('images/honeybac.jpg');
+    color: #333;
+    line-height: 1.6;
+}
+/* Products Section */
+.products {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #8b4513;
+    font-size: 24px;
+    
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #8b4513;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #8b4513;
+    font-size: 36px;
+    background-image: url('images/honeybac.jpg');
+}
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row; /* Use 'column' for stacking vertically */
+    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+    justify-content: center; /* Adjust alignment horizontally */
+    align-items: center; /* Adjust alignment vertically */
+}
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* ===== Header Styles (Modified for logo) ===== */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(249, 8, 217, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NEW LOGO STYLES (Added) */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px; /* Adjust based on your logo */
+    width: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b4513;
+}
+
+.logo-text span {
+    color: #d2691e;
+}
+
+/* OLD LOGO STYLES (Commented Out) */
+/* .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8b4513;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #d2691e;
+} */
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1999d8;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #8b4513;
+}
+
+/* ===== Hero/ Benefit Section  */
+.about-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+.hero {
+    background-image: url('images/bacghee3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: lab(10.06% 32.05 -36.35);
+}
+
+.hero-content h1 {
+    color: #e2c20f;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===== Features Section (Unchanged) ===== */
+.features {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #e8e67f;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #d2691e;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: #8b4513;
+}
+h3 {
+    margin-bottom: 15px;
+    color: #8b4513;
+}
+
+/* ===== Testimonials Section (Unchanged) ===== */
+.testimonials {
+    padding: 80px 0;
+    background-color: #f5e1e1;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.customer {
+    font-weight: bold;
+    color: #d2691e;
+}
+
+/* ===== Footer (Unchanged) ===== */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    color: #d2691e;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #1999d8;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #d2691e;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ===== Responsive Styles (Modified for logo) ===== */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    /* Optional: Hide text on mobile */
+    .logo-text {
+        display: none;
+    }
+    
+    /* Adjust logo size on mobile */
+    .logo img {
+        height: 40px;
+    }
+    
+}
+h4 {
+    font-weight: bold;
+    color: #e6b089;
+}
+.about-text {
+    background-color: #eee9d4;
+    background-image: image('image/bacghee3.jpeg');
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+ .about-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff8e1;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .about-section h1 {
+      text-align: center;
+      color: #6d4c41;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+    }
+
+    .about-content img {
+      max-width: 250px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .about-content p {
+      max-width: 800px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    @media (min-width: 768px) {
+      .about-content {
+        flex-direction: row;
+        gap: 30px;
+        text-align: left;
+      }
+
+      .about-content img {
+        margin: 0;
+      }
+    }
+    .support-section {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      }
+  
+      .support-section h2 {
+        text-align: center;
+        color: #3e2723;
+        margin-bottom: 30px;
+      }
+  
+      .support-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+  
+      .card {
+        background-color: #fff8e1;
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1 1 250px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+      }
+  
+      .card:hover {
+        transform: scale(1.03);
+      }
+  
+      .card a {
+        text-decoration: none;
+        color: #4e342e;
+        font-weight: bold;
+      }
+  
+      .card i {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #6d4c41;
+      }
